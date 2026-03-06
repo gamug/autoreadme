@@ -5,7 +5,7 @@ Prompts
 from typing import List
 
 from langchain_core.prompts import PromptTemplate
-from autoreadme.types import FileSummary, FolderSummary
+from readme_ready.types import FileSummary, FolderSummary
 
 
 def create_code_file_summary(
@@ -129,7 +129,7 @@ def create_readme_prompt(
 
     INSTRUCTIONS:
     - Do not use <code> nor </pre> tags, use fenced code blocks with ``` instead with code type specified (cmd, bas, java, python, etc).
-    - Each time you use ```, do it id a new line and close it in a new line, to avoid formatting issues in the final readme.
+    - Each time you use ```, do it in a new line and close it in a new line. Never wrap ``` in other html tags.
     - Only use CONTEXT to build the section content. If CONTEXT is empty output exactly: No content found for this section
     - Replace any mention to repository files with <a></a> html tag using the CONTEXT as source for links, do not invent links.
     - Do not include information that is not directly relevant to the repository.

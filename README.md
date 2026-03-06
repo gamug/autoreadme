@@ -33,7 +33,7 @@ This development adaptation is dessigning to run with minimal inputs. We has a c
 This is made by using ```LLModels``` class. Correct way to use the the class is as follows
 
 ```python
-from autoreadme.types import LLMModels
+from readme_ready.types import LLMModels
 llm = LLMModels.GPT5
 ```
 Available models are:
@@ -73,8 +73,8 @@ Available models are:
 To achieve this we dispose of ```AutodocRepoConfig``` class. You should use the object as follows:
 
 ```python
-from autoreadme.types import LLMModels, Priority
-from autoreadme.types import AutodocRepoConfig
+from readme_ready.types import LLMModels, Priority
+from readme_ready.types import AutodocRepoConfig
 repo_config = AutodocRepoConfig (
     name = "name_of_your_development", 
     root = "folder_in_your_laptop_where_development_is_located",
