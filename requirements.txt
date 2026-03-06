@@ -1,0 +1,19 @@
+torch
+langchain
+langchain-classic
+langchain_openai
+langchain_experimental
+langchain_huggingface
+hnswlib
+questionary
+accelerate
+bitsandbytes
+optimum
+auto-gptq; sys_platform != 'darwin'
+python-magic-bin
+mkdocstrings-python
+sentencepiece
+sentence_transformers
+pymarkdownlnt
+peft
+gguf
